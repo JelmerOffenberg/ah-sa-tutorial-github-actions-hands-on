@@ -19,12 +19,18 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.3
+        with:
+          python-version: 3.7
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       # Install library
       - name: install libary
-        run: pip install -e .[dev]
+        run: pip3 install -e .[dev]
 
       # Runs a single command using the runners shell
       - name: Run setup.py
