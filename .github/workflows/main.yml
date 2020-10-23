@@ -23,7 +23,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # Install library
-      - name: pip install -e ./ah-sa-tutorial-github-actions-hands-on/[dev]
+      - name: install libary
+        run: pip install -e ./ah-sa-tutorial-github-actions-hands-on/[dev]
 
       # Runs a single command using the runners shell
       - name: Run setup.py
