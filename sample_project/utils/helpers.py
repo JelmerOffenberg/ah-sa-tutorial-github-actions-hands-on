@@ -6,3 +6,6 @@ def plus(x: int) -> int:
 
 def min(x: int) -> int:
     return x - x
+
+def min2(x: int) -> int:
+    return x - x
