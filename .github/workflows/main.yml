@@ -24,7 +24,7 @@ jobs:
 
       # Install library
       - name: install libary
-        run: pip install -e ./ah-sa-tutorial-github-actions-hands-on/[dev]
+        run: pip install -e .[dev]
 
       # Runs a single command using the runners shell
       - name: Run setup.py
